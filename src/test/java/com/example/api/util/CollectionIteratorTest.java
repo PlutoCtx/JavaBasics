@@ -109,10 +109,6 @@ public class CollectionIteratorTest {
             String city = iterator.next();
             System.out.println(city);
         }
-
-
-
-
     }
 
 
@@ -120,7 +116,6 @@ public class CollectionIteratorTest {
 
     /**
      * 使用增强for循环遍历集合和数组
-     *
      * 增强for循环底层是Iterator,所以Iterator有的问题它都有
      */
     @Test
