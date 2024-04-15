@@ -1,8 +1,5 @@
 # Java SE 基础代码
 
-## 进度详情
-- [x] 2024.4.14: Map、List与Map的嵌套、泛型编程
-
 
 ## Map 的使用
 ### 1. HashMap 的使用
@@ -930,3 +927,60 @@ public void testGenericWildcardCharacterDown() {
 业务开发，定义泛型类、泛型接口、泛型方法会使用较少。
 
 但是如果开发框架，通用的组件，泛型的场景就用的比较多。
+
+
+
+## 异常机制
+
+### 1.异常的介绍
+
+异常指的是程序在运行的过程中发生了不正常的情况，如果开发人员不处理，JVM会中止该程序的运行
+
+```java
+/**
+ * 算术异常
+ */
+@Test
+public void testCreateArithmeticException() {
+    System.out.println("程序开始执行");
+    // 0不能当做除数，此处会引发ArithmeticException异常
+    System.out.println(1 / 0);
+    // 由于没有处理ArithmeticException，JVM终止程序的运行，该语句不会执行
+    System.out.println("程序结束执行");
+}
+```
+
+### 2.异常的产生和处理流程分析
+
+1. 程序在运行时，如果发生了异常，例如System.out.printIn(1/0); 会引发ArithmeticException也就是算术异常，该异常能被JVM识别。
+2. 因为在Java语言中一切皆对象，异常也是对象。JVM会创建该异常的对象，该异常对象会包含异常类型，异常描述信息，异常的位置信息，创建完成对象之后将该异常对象抛出，thrownewArithmeticException(String str)
+3. testCreateArithmeticException()方法会接收JVM抛出的ArithmeticException，但是该方法没有处理该异常，就会继续往上抛出，即还是抛给JVM，因为testCreateArithmeticException()方法是JVM调用。
+4. JVM接收到ArithmeticException之后会调用printStackTrace0方法将异常的堆栈信息打印到控制台，然后终止程序的运行
+
+### 3.异常的体系结构
+
+java.lang.Throwable类是Java语言所有的**错误**和**异常**的父类
+
+java.lang.error类是Java语言所有错误的父类，这里的错误指的是程序运行过程中的错误，而不是语法错误。错误是不能通过程序来修复，例如堆栈溢出，堆溢出，服务器宕机，网络不通等等。
+
+```java
+public void createStackOverFlowError() {
+    System.out.println("I'm StackOverFlowError");
+    createStackOverFlowError();
+}
+
+/**
+ * 栈溢出错误
+ */
+@Test
+public void testCreateStackOverFlowError() {
+    createStackOverFlowError();
+}
+```
+
+java.lang.Exception类是所有Java异常的父类，异常可以通过异常处理来修复，Java的异常分为两类
+
+- 运行时异常：程序运行过程发生的异常，例如ArrayIndexOutOfBoundsException，NullPointerException，ClassCastException，它们都是RuntimeException的子类
+- 编译时异常：程序在编译时发生的异常，编译时异常必须在程序运行之前处理，否则程序没法编译通过。如果该异常不是RuntimeException或者子类，那么该异常就是编译时异常。例如ParseException，IOException
+
+![异常体系结构](%E8%B7%9F%E5%85%89%E7%A3%8A%E5%AD%A6Java%20%E7%AC%94%E8%AE%B0.assets/image-20240415234617855.png)
