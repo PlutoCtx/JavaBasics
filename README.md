@@ -10,27 +10,27 @@ HashMap有如下特点：
 
 ```java
     /**
-     * 1. 键唯一 有哈希表保证唯一
-     * 2. 键值对存取无序
-     */
-    @Test
-    public void testHashMapFeature(){
-        Map<Cellphone, String> map = new HashMap<>();
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        map.put(new Cellphone("华为p40", 11999, 228),"华为");
-        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        System.out.println("当前map集合的元素个数为：" + map.size());
+ * 1. 键唯一 有哈希表保证唯一
+ * 2. 键值对存取无序
+ */
+@Test
+public void testHashMapFeature(){
+    Map<Cellphone, String> map = new HashMap<>();
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    map.put(new Cellphone("华为p40", 11999, 228),"华为");
+    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    System.out.println("当前map集合的元素个数为：" + map.size());
 
-        System.out.println("*********************************当前map集合的元素内容为**************");
-        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-        for (Map.Entry<Cellphone, String> entry : entrySet) {
-            Cellphone cellphone = entry.getKey();
-            String name = entry.getValue();
-            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
-        }
+    System.out.println("*********************************当前map集合的元素内容为**************");
+    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+    for (Map.Entry<Cellphone, String> entry : entrySet) {
+        Cellphone cellphone = entry.getKey();
+        String name = entry.getValue();
+        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
     }
+}
 ```
 
 
@@ -44,27 +44,27 @@ LinkedHashMap有如下特点：
 
 ```java
     /**
-     * 1. 键唯一 有哈希表保证唯一
-     * 2. 键值对存取有序
-     */
-    @Test
-    public void testLinkedHashMapFeature(){
-        Map<Cellphone, String> map = new LinkedHashMap<>();
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        map.put(new Cellphone("华为p40", 11999, 228),"华为");
-        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        System.out.println("当前map集合的元素个数为：" + map.size());
+ * 1. 键唯一 有哈希表保证唯一
+ * 2. 键值对存取有序
+ */
+@Test
+public void testLinkedHashMapFeature(){
+    Map<Cellphone, String> map = new LinkedHashMap<>();
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    map.put(new Cellphone("华为p40", 11999, 228),"华为");
+    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    System.out.println("当前map集合的元素个数为：" + map.size());
 
-        System.out.println("*********************************当前map集合的元素内容为**************");
-        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-        for (Map.Entry<Cellphone, String> entry : entrySet) {
-            Cellphone cellphone = entry.getKey();
-            String name = entry.getValue();
-            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
-        }
+    System.out.println("*********************************当前map集合的元素内容为**************");
+    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+    for (Map.Entry<Cellphone, String> entry : entrySet) {
+        Cellphone cellphone = entry.getKey();
+        String name = entry.getValue();
+        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
     }
+}
 ```
 
 
@@ -83,61 +83,61 @@ TreeMap的特点如下：
 
 ```java
     /**
-     * 1. 键唯一 有哈希表保证唯一
-     * 2. 有序 按照元素的默认排序规则来排序，元素所属的类必须实现Comparable接口的compareTo方法
-     * 来实现默认的排序规则
-     */
-    @Test
-    public void testTreeMapFeature(){
-        Map<Cellphone, String> map = new TreeMap<>();
-        // TODO PlutoCtx-2024/4/14: test failed
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        map.put(new Cellphone("华为p40", 11999, 228),"华为");
-        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        System.out.println("当前map集合的元素个数为：" + map.size());
+ * 1. 键唯一 有哈希表保证唯一
+ * 2. 有序 按照元素的默认排序规则来排序，元素所属的类必须实现Comparable接口的compareTo方法
+ * 来实现默认的排序规则
+ */
+@Test
+public void testTreeMapFeature(){
+    Map<Cellphone, String> map = new TreeMap<>();
+    // TODO PlutoCtx-2024/4/14: test failed
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    map.put(new Cellphone("华为p40", 11999, 228),"华为");
+    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    System.out.println("当前map集合的元素个数为：" + map.size());
 
-        System.out.println("*********************************当前map集合的元素内容为**************");
-        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-        for (Map.Entry<Cellphone, String> entry : entrySet) {
-            Cellphone cellphone = entry.getKey();
-            String name = entry.getValue();
-            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
-        }
+    System.out.println("*********************************当前map集合的元素内容为**************");
+    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+    for (Map.Entry<Cellphone, String> entry : entrySet) {
+        Cellphone cellphone = entry.getKey();
+        String name = entry.getValue();
+        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
     }
+}
 ```
 
 #### 自定义规则排序
 
 ```java
     /**
-     * TreeMap自定义规则排序
-     * 按价格升序排序
-     */
-    @Test
-    public void testTreeMapCustomSort(){
-        Map<Cellphone, String> map = new TreeMap<>(new Comparator<Cellphone>() {
-            @Override
-            public int compare(Cellphone cellphone1, Cellphone cellphone2) {
-                return cellphone1.getPrice() - cellphone2.getPrice();
-            }
-        });
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        map.put(new Cellphone("华为p40", 11999, 228),"华为");
-        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-        map.put(new Cellphone("小米12", 10999, 218),"小米");
-        System.out.println("当前map集合的元素个数为：" + map.size());
-
-        System.out.println("*********************************当前map集合的元素按价格升序排序内容为**************");
-        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-        for (Map.Entry<Cellphone, String> entry : entrySet) {
-            Cellphone cellphone = entry.getKey();
-            String name = entry.getValue();
-            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+ * TreeMap自定义规则排序
+ * 按价格升序排序
+ */
+@Test
+public void testTreeMapCustomSort(){
+    Map<Cellphone, String> map = new TreeMap<>(new Comparator<Cellphone>() {
+        @Override
+        public int compare(Cellphone cellphone1, Cellphone cellphone2) {
+            return cellphone1.getPrice() - cellphone2.getPrice();
         }
+    });
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    map.put(new Cellphone("华为p40", 11999, 228),"华为");
+    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+    map.put(new Cellphone("小米12", 10999, 218),"小米");
+    System.out.println("当前map集合的元素个数为：" + map.size());
+
+    System.out.println("*********************************当前map集合的元素按价格升序排序内容为**************");
+    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+    for (Map.Entry<Cellphone, String> entry : entrySet) {
+        Cellphone cellphone = entry.getKey();
+        String name = entry.getValue();
+        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
     }
+}
 ```
 
 
@@ -152,40 +152,40 @@ TreeMap的特点如下：
 
 ```java
   public static void main(String[] args) {
-        System.out.println("请输入一段字符串：");
+    System.out.println("请输入一段字符串：");
 
-        Scanner input = new Scanner(System.in);
-        // 将字符串保存到text中
-        String text = input.nextLine();
-        // 将字符串转换为字符数组
-        char[] chars = text.toCharArray();
-        // 遍历字符串数组，统计每个字符的个数
-        //LinkedHashMap  TreeMap  HashMap
-        Map<Character, Integer> map = new LinkedHashMap<>();
+    Scanner input = new Scanner(System.in);
+    // 将字符串保存到text中
+    String text = input.nextLine();
+    // 将字符串转换为字符数组
+    char[] chars = text.toCharArray();
+    // 遍历字符串数组，统计每个字符的个数
+    //LinkedHashMap  TreeMap  HashMap
+    Map<Character, Integer> map = new LinkedHashMap<>();
 
-        // 遍历数组，统计每个字符的个数
-        for (char ch : chars) {
-            // 用户输入了重复的字符
-            if (map.containsKey(ch)){
-                Integer count = map.get(ch);
-                count ++;
-                map.put(ch, count);
-            }else {
-                map.put(ch, 1);
-            }
-
+    // 遍历数组，统计每个字符的个数
+    for (char ch : chars) {
+        // 用户输入了重复的字符
+        if (map.containsKey(ch)){
+            Integer count = map.get(ch);
+            count ++;
+            map.put(ch, count);
+        }else {
+            map.put(ch, 1);
         }
 
-        System.out.println("map的内容为：" + map);
-
-        Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
-
-        for (Map.Entry<Character, Integer> entry : entrySet) {
-            Character ch = entry.getKey();
-            Integer count = entry.getValue();
-            System.out.println("字符" + ch + "个数是" + count);
-        }
     }
+
+    System.out.println("map的内容为：" + map);
+
+    Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
+
+    for (Map.Entry<Character, Integer> entry : entrySet) {
+        Character ch = entry.getKey();
+        Integer count = entry.getValue();
+        System.out.println("字符" + ch + "个数是" + count);
+    }
+}
 ```
 
 
@@ -235,38 +235,38 @@ List嵌套Map就是List中的元素类型又是一个Map
 
 ```java
     /**
-     * List嵌套Map集合的元素遍历
-     */
-    @Test
-    public void testListNestedMap(){
-        Map<String,String> asiaMap = new HashMap<>();
-        asiaMap.put("中国","北京");
-        asiaMap.put("韩国","首尔");
-        asiaMap.put("日本","东京");
+ * List嵌套Map集合的元素遍历
+ */
+@Test
+public void testListNestedMap(){
+    Map<String,String> asiaMap = new HashMap<>();
+    asiaMap.put("中国","北京");
+    asiaMap.put("韩国","首尔");
+    asiaMap.put("日本","东京");
 
-        Map<String,String> europeMap = new HashMap<>();
-        europeMap.put("英国","伦敦");
-        europeMap.put("法国","巴黎");
-        europeMap.put("德国","柏林");
+    Map<String,String> europeMap = new HashMap<>();
+    europeMap.put("英国","伦敦");
+    europeMap.put("法国","巴黎");
+    europeMap.put("德国","柏林");
 
-        List<Map<String,String>> world = new ArrayList<>();
+    List<Map<String,String>> world = new ArrayList<>();
 
-        world.add(asiaMap);
-        world.add(europeMap);
+    world.add(asiaMap);
+    world.add(europeMap);
 
-        System.out.println("List嵌套Map集合的元素遍历");
-        for (Map<String, String> map : world) {
-            Set<Map.Entry<String, String>> entrySet = map.entrySet();
+    System.out.println("List嵌套Map集合的元素遍历");
+    for (Map<String, String> map : world) {
+        Set<Map.Entry<String, String>> entrySet = map.entrySet();
 
-            for (Map.Entry<String, String> entry : entrySet) {
-                String country = entry.getKey();
-                String capital = entry.getValue();
-                System.out.println("国家：" + country + "    首都：" + capital);
-            }
-
+        for (Map.Entry<String, String> entry : entrySet) {
+            String country = entry.getKey();
+            String capital = entry.getValue();
+            System.out.println("国家：" + country + "    首都：" + capital);
         }
 
     }
+
+}
 ```
 
 
@@ -355,7 +355,7 @@ public void testMapNestedMap(){
         }
         System.out.println();
     }
-    
+
 }
 ```
 
@@ -984,3 +984,342 @@ java.lang.Exception类是所有Java异常的父类，异常可以通过异常处
 - 编译时异常：程序在编译时发生的异常，编译时异常必须在程序运行之前处理，否则程序没法编译通过。如果该异常不是RuntimeException或者子类，那么该异常就是编译时异常。例如ParseException，IOException
 
 ![异常体系结构](%E8%B7%9F%E5%85%89%E7%A3%8A%E5%AD%A6Java%20%E7%AC%94%E8%AE%B0.assets/image-20240415234617855.png)
+
+### 4.异常的产生和处理异常的产生
+
+throw 关键字可以抛出一个异常，其语法格式就是 throw 异常类型，例如`throw new RuntimeException("异常消息”);`
+
+throw关键字只能在方法中使用，用来抛出一个指定的异常对象，然后将异常对象传递给方法的调用者，并结束当前方法的执行。
+
+```java
+public void setPrice(Integer price) {
+    if (price < 0 || price > 100_0000) {
+        throw new RuntimeException("价格异常");
+    }
+    System.out.println("价格设置成功");
+    this.price = price;
+}
+```
+
+```java
+@Test
+public void testThrowRuntimeException(){
+    Cellphone cellphone = new Cellphone();
+    cellphone.setPrice(-100);
+    cellphone.setModel("iphone13");
+}
+```
+
+#### 异常的处理
+
+异常处理的两种方式：声明式处理异常和**捕获处理异常**
+
+#### 声明式处理异常
+
+声明式处理异常通常都是使用throws关键字将异常标识出来，表示该方法不处理异常（甩锅），用来提醒方法的调用方来处理异常，如果方法的调用方也不处理，那么最终还是会到JVM,JVM会调用printStackTrace将异常的堆栈信息打印在控制台，然后终止程序。
+
+```java
+/**
+ * 声明式处理异常
+ */
+public void throwsParseException() throws ParseException {
+    throw new ParseException("解析异常", 6);
+}
+
+/**
+ * 声明式处理异常
+ * @throws ParseException
+ */
+@Test
+public void testThrowsParseException() throws ParseException {
+    throwsParseException();
+    System.out.println("结束程序");
+}
+```
+
+声明式处理异常不是真正的处理异常，仅仅是甩锅，异常之后的代码没有机会执行。
+
+#### 捕获处理异常
+
+捕获处理异常就是捕获异常之后进行处理
+
+Java提供了try/catch来捕获异常并进行相关的处理
+try/catch的语法格式
+
+```java
+try{
+	可能会发生异常的代码
+} catch (异常类型变量名){
+	异常处理的代码
+}
+```
+
+try/catch的执行流程
+
+- 首先执行try，如果try语句块发生了异常，那么tny语句块剩下的语句不会再执行了，直接进入到catch语句块，执行异常处理的代码。然后继续往下执行
+
+```java
+/**
+ * 捕获处理异常
+ * 有异常的处理流程
+ */
+@Test
+public void testTryCatchWithException() {
+    DateFormat dateFormat = new SimpleDateFormat(  "yyyy-MM-dd");
+    try {
+        System.out.println("begin try");
+        dateFormat.parse( "2021年5月14日");
+        System.out.println("end try");
+    }catch(ParseException e){
+        System.out.println("程序发生了异常");
+    }
+
+    // 捕获处理异常后即使遇到了异常，catch代码块之后的代码依然会执行
+    System.out.println("程序正常结束");
+
+}
+```
+
+- 首先执行try，如果try语句没有发生异常，那么就不会执行catch语句块的异常处理代码，而是直接继续往下执行
+
+```java
+/**
+ * 捕获处理异常
+ * 无异常的处理流程
+ */
+@Test
+public void testTryCatchWithoutException() {
+    DateFormat dateFormat = new SimpleDateFormat(  "yyyy-MM-dd");
+    try {
+        System.out.println("begin try");
+        dateFormat.parse( "2021-05-14");
+        System.out.println("end try");
+    }catch(ParseException e){
+        System.out.println("程序发生了异常");
+    }
+
+    // 捕获处理异常后即使遇到了异常，catch代码块之后的代码依然会执行
+    System.out.println("程序正常结束");
+
+}
+```
+
+
+
+抛出多个异常和捕获多个异常（运行时异常）
+
+```java
+/**
+ * 抛出了两个运行时异常
+ * 分别捕获多个异常
+ * 同时捕获多个异常
+ * @param flag
+ */
+public void throwMultiRuntimeException(int flag){
+    try {
+        if(flag == 1){
+            throw new NullPointerException("空指针异常");
+        } else if(flag == 2) {
+            throw new IllegalArgumentException("参数非法");
+        }
+    } // Java7以后允许catch多个异常，但是异常的类型必须是平级的，也就是有共同的父类
+    catch (NullPointerException | IllegalArgumentException e) {
+        throw new RuntimeException(e);
+    }
+}
+```
+
+```java
+/**
+ * 捕获多个异常的测试方法
+ */
+@Test
+public void testInvokeThrowMultiRuntimeException() {
+    throwMultiRuntimeException(1);
+    throwMultiRuntimeException(2);
+}
+```
+
+
+
+#### try/catch/finally
+
+在捕获处理异常时，异常会引发程序跳转，导致有些语句执行不到，而finally语句块就解决了这个问题：有些特定的代码无论是否发生了异常，都需要执行，此时就可以使用到finally语句块，而且finally语句块通常都是和try/catch语句结合使用。
+
+需要注意的是有些非常极端的情况finally语句块不会执行，例如System.exit(-1)退出虚拟机或者系统宕机。
+
+try/catch/finally的语法格式：
+
+```java
+try{
+	可能会发生异常的代码
+} catch(异常类型变量名){
+	异常处理的代码
+} fina1ly{
+	//fina11y语句块
+}
+```
+
+try/catch/finally 的执行流程
+
+- 首先执行try，如果try语句块发生了异常，那么try语句块剩下的语句不会再执行了，直接进入到catch语句块，执行异常处理的代码。然后继续往下执行finally语句块
+- 首先执行try，如果try语句没有发生异常，那么就不会执行catch语句块的异常处理代码，而是直接继续往下执行finally语句块
+
+```java
+    /**
+     * try/catch/finally的使用
+     */
+    @Test
+    public void testTryCatchFinally(){
+        Scanner input =null;
+
+        try {
+            input = new Scanner(System.in);
+            System.out.println(1 / 0);
+            // 关闭资源
+            input.close();
+            System.out.println("在try代码块中关闭Scanner");
+        } catch (Exception ex){
+            System.out.println("系统发生了异常");
+//            return;
+            // 异常退出JVM
+            System.exit(-1);
+        } finally {
+            input.close();
+            System.out.println("在finally代码块中关闭Scanner");
+        }
+        // 如果catch中使用了return，此处的代码不会被执行
+        System.out.println("程序正常结束");
+    }
+```
+
+- catch代码块中有return语句,finally语句块依然会执行。
+- 如果catch中使用了return，此处的代码不会执行
+
+finally的应用场景主要是用来关闭资源，例如IO操作、数据库操作等等。
+
+### 5.异常的注意事项
+
+1. 如果父类的方法throws声明抛出多个异常，子类在重写父类方法时，只能throws声明抛出相同的异常或者是它的子类。
+
+```java
+class Father {
+    /**
+     * 获取文件信息
+     * @throws IOException
+     */
+    public void getFileInfo() throws IOException {
+
+    }
+}
+class child extends Father {
+    @Override
+    public void getFileInfo() throws FileNotFoundException {
+
+    }
+}
+```
+
+```java
+/**
+ * 方法重写的异常注意事项
+ */
+@Test
+public void testGetFileInfo() {
+    Father father = new Child();
+    try {
+        father.getFileInfo();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+```
+
+2. 父类的方法没有抛出异常，那么子类重写父类方法时也不可以抛出异常，如果子类产生了异常，只能try/catch捕获处理，不能使用throws声明抛出。
+
+```java
+class Father {
+    /**
+     * 获取文件信息
+     * @throws IOException
+     */
+    public void getFileInfo() {
+
+    }
+}
+class child extends Father {
+    @Override
+    public void getFileInfo() {
+		try {
+            throw new FileNotFoundException("文件不存在");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+
+
+```java
+/**
+ * 方法重写的异常注意事项
+ */
+@Test
+public void testGetFileInfo() {
+    Father father = new Child();
+    father.getFileInfo(); 
+}
+```
+
+
+
+### 6.自定义异常的使用
+
+自定义异常就是要定义异常类，因为JDK的开发人员不知道我们要开发什么业务系统，因此我们业务开发人员需要根据自身的业务逻辑来开发对应的异常类。
+
+- 要开发编译时异常继承java.lang.Exception
+- 要开发运行时异常继承java.lang.RuntimeException
+
+项目开发时通常都是定义RuntimeException的子类作为业务异常
+
+在注册网站时，会检测用户名是否存在，如果存在就会提该用户名已经被占用，因此我们就需要定义一个异常类
+
+**自定义异常类**
+
+```java
+public class RegisterException extends RuntimeException{
+
+    public RegisterException(String message) {
+        super(message);
+    }
+}
+```
+
+**自定义异常的使用**
+
+```java
+public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("请输入你的用户名：");
+    String userName = input.nextLine();
+
+    if (userName.equals("Max")) {
+        try {
+            throw new RegisterException("用户名以被注册");
+        } catch (RegisterException e) {
+            System.out.println("请更换用户名后重试");
+        } finally {
+            input.close();
+        }
+    } else {
+        System.out.println("用户名注册成功");
+    }
+}
+```
+
+#### 最佳实践
+
+现在都是微服务时代，一个大型的分布式系统会被拆成若干个子系统，系统和子系统之间通过HTTP调用接口来实现数据的交互，那么接口调用时可能发生一些异常情况（数据库GG，网络超时），此时我们就可以把调用接口的代码用try/catch/finally包起来，然后在catch中循环重试，至于重试的频率，次数根据业务的轻重来权衡。以此来保证服务的稳定性。

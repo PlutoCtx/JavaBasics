@@ -67,6 +67,10 @@ public class Cellphone {
     }
 
     public void setPrice(Integer price) {
+        if (price < 0 || price > 100_0000) {
+            throw new RuntimeException("价格异常");
+        }
+        System.out.println("价格设置成功");
         this.price = price;
     }
 
