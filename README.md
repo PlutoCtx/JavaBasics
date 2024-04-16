@@ -2,7 +2,9 @@
 
 
 ## Map 的使用
+
 ### 1. HashMap 的使用
+
 HashMap有如下特点：
 
 > - 键唯一 由哈希表保证唯一
@@ -10,27 +12,27 @@ HashMap有如下特点：
 
 ```java
     /**
- * 1. 键唯一 有哈希表保证唯一
- * 2. 键值对存取无序
- */
-@Test
-public void testHashMapFeature(){
-    Map<Cellphone, String> map = new HashMap<>();
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    map.put(new Cellphone("华为p40", 11999, 228),"华为");
-    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    System.out.println("当前map集合的元素个数为：" + map.size());
+     * 1. 键唯一 有哈希表保证唯一
+     * 2. 键值对存取无序
+     */
+    @Test
+    public void testHashMapFeature(){
+        Map<Cellphone, String> map = new HashMap<>();
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        map.put(new Cellphone("华为p40", 11999, 228),"华为");
+        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        System.out.println("当前map集合的元素个数为：" + map.size());
 
-    System.out.println("*********************************当前map集合的元素内容为**************");
-    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-    for (Map.Entry<Cellphone, String> entry : entrySet) {
-        Cellphone cellphone = entry.getKey();
-        String name = entry.getValue();
-        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        System.out.println("*********************************当前map集合的元素内容为**************");
+        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+        for (Map.Entry<Cellphone, String> entry : entrySet) {
+            Cellphone cellphone = entry.getKey();
+            String name = entry.getValue();
+            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        }
     }
-}
 ```
 
 
@@ -44,27 +46,27 @@ LinkedHashMap有如下特点：
 
 ```java
     /**
- * 1. 键唯一 有哈希表保证唯一
- * 2. 键值对存取有序
- */
-@Test
-public void testLinkedHashMapFeature(){
-    Map<Cellphone, String> map = new LinkedHashMap<>();
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    map.put(new Cellphone("华为p40", 11999, 228),"华为");
-    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    System.out.println("当前map集合的元素个数为：" + map.size());
+     * 1. 键唯一 有哈希表保证唯一
+     * 2. 键值对存取有序
+     */
+    @Test
+    public void testLinkedHashMapFeature(){
+        Map<Cellphone, String> map = new LinkedHashMap<>();
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        map.put(new Cellphone("华为p40", 11999, 228),"华为");
+        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        System.out.println("当前map集合的元素个数为：" + map.size());
 
-    System.out.println("*********************************当前map集合的元素内容为**************");
-    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-    for (Map.Entry<Cellphone, String> entry : entrySet) {
-        Cellphone cellphone = entry.getKey();
-        String name = entry.getValue();
-        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        System.out.println("*********************************当前map集合的元素内容为**************");
+        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+        for (Map.Entry<Cellphone, String> entry : entrySet) {
+            Cellphone cellphone = entry.getKey();
+            String name = entry.getValue();
+            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        }
     }
-}
 ```
 
 
@@ -83,61 +85,61 @@ TreeMap的特点如下：
 
 ```java
     /**
- * 1. 键唯一 有哈希表保证唯一
- * 2. 有序 按照元素的默认排序规则来排序，元素所属的类必须实现Comparable接口的compareTo方法
- * 来实现默认的排序规则
- */
-@Test
-public void testTreeMapFeature(){
-    Map<Cellphone, String> map = new TreeMap<>();
-    // TODO PlutoCtx-2024/4/14: test failed
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    map.put(new Cellphone("华为p40", 11999, 228),"华为");
-    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    System.out.println("当前map集合的元素个数为：" + map.size());
+     * 1. 键唯一 有哈希表保证唯一
+     * 2. 有序 按照元素的默认排序规则来排序，元素所属的类必须实现Comparable接口的compareTo方法
+     * 来实现默认的排序规则
+     */
+    @Test
+    public void testTreeMapFeature(){
+        Map<Cellphone, String> map = new TreeMap<>();
+        // TODO PlutoCtx-2024/4/14: test failed
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        map.put(new Cellphone("华为p40", 11999, 228),"华为");
+        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        System.out.println("当前map集合的元素个数为：" + map.size());
 
-    System.out.println("*********************************当前map集合的元素内容为**************");
-    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-    for (Map.Entry<Cellphone, String> entry : entrySet) {
-        Cellphone cellphone = entry.getKey();
-        String name = entry.getValue();
-        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        System.out.println("*********************************当前map集合的元素内容为**************");
+        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+        for (Map.Entry<Cellphone, String> entry : entrySet) {
+            Cellphone cellphone = entry.getKey();
+            String name = entry.getValue();
+            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        }
     }
-}
 ```
 
 #### 自定义规则排序
 
 ```java
     /**
- * TreeMap自定义规则排序
- * 按价格升序排序
- */
-@Test
-public void testTreeMapCustomSort(){
-    Map<Cellphone, String> map = new TreeMap<>(new Comparator<Cellphone>() {
-        @Override
-        public int compare(Cellphone cellphone1, Cellphone cellphone2) {
-            return cellphone1.getPrice() - cellphone2.getPrice();
-        }
-    });
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    map.put(new Cellphone("华为p40", 11999, 228),"华为");
-    map.put(new Cellphone("iphone14", 12999, 238),"苹果");
-    map.put(new Cellphone("vivo10", 10099, 218),"vivo");
-    map.put(new Cellphone("小米12", 10999, 218),"小米");
-    System.out.println("当前map集合的元素个数为：" + map.size());
+     * TreeMap自定义规则排序
+     * 按价格升序排序
+     */
+    @Test
+    public void testTreeMapCustomSort(){
+        Map<Cellphone, String> map = new TreeMap<>(new Comparator<Cellphone>() {
+            @Override
+            public int compare(Cellphone cellphone1, Cellphone cellphone2) {
+                return cellphone1.getPrice() - cellphone2.getPrice();
+            }
+        });
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        map.put(new Cellphone("华为p40", 11999, 228),"华为");
+        map.put(new Cellphone("iphone14", 12999, 238),"苹果");
+        map.put(new Cellphone("vivo10", 10099, 218),"vivo");
+        map.put(new Cellphone("小米12", 10999, 218),"小米");
+        System.out.println("当前map集合的元素个数为：" + map.size());
 
-    System.out.println("*********************************当前map集合的元素按价格升序排序内容为**************");
-    Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
-    for (Map.Entry<Cellphone, String> entry : entrySet) {
-        Cellphone cellphone = entry.getKey();
-        String name = entry.getValue();
-        System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        System.out.println("*********************************当前map集合的元素按价格升序排序内容为**************");
+        Set<Map.Entry<Cellphone, String>> entrySet = map.entrySet();
+        for (Map.Entry<Cellphone, String> entry : entrySet) {
+            Cellphone cellphone = entry.getKey();
+            String name = entry.getValue();
+            System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
+        }
     }
-}
 ```
 
 
@@ -152,40 +154,40 @@ public void testTreeMapCustomSort(){
 
 ```java
   public static void main(String[] args) {
-    System.out.println("请输入一段字符串：");
+        System.out.println("请输入一段字符串：");
 
-    Scanner input = new Scanner(System.in);
-    // 将字符串保存到text中
-    String text = input.nextLine();
-    // 将字符串转换为字符数组
-    char[] chars = text.toCharArray();
-    // 遍历字符串数组，统计每个字符的个数
-    //LinkedHashMap  TreeMap  HashMap
-    Map<Character, Integer> map = new LinkedHashMap<>();
+        Scanner input = new Scanner(System.in);
+        // 将字符串保存到text中
+        String text = input.nextLine();
+        // 将字符串转换为字符数组
+        char[] chars = text.toCharArray();
+        // 遍历字符串数组，统计每个字符的个数
+        //LinkedHashMap  TreeMap  HashMap
+        Map<Character, Integer> map = new LinkedHashMap<>();
 
-    // 遍历数组，统计每个字符的个数
-    for (char ch : chars) {
-        // 用户输入了重复的字符
-        if (map.containsKey(ch)){
-            Integer count = map.get(ch);
-            count ++;
-            map.put(ch, count);
-        }else {
-            map.put(ch, 1);
+        // 遍历数组，统计每个字符的个数
+        for (char ch : chars) {
+            // 用户输入了重复的字符
+            if (map.containsKey(ch)){
+                Integer count = map.get(ch);
+                count ++;
+                map.put(ch, count);
+            }else {
+                map.put(ch, 1);
+            }
+
         }
 
+        System.out.println("map的内容为：" + map);
+
+        Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
+
+        for (Map.Entry<Character, Integer> entry : entrySet) {
+            Character ch = entry.getKey();
+            Integer count = entry.getValue();
+            System.out.println("字符" + ch + "个数是" + count);
+        }
     }
-
-    System.out.println("map的内容为：" + map);
-
-    Set<Map.Entry<Character, Integer>> entrySet = map.entrySet();
-
-    for (Map.Entry<Character, Integer> entry : entrySet) {
-        Character ch = entry.getKey();
-        Integer count = entry.getValue();
-        System.out.println("字符" + ch + "个数是" + count);
-    }
-}
 ```
 
 
@@ -235,38 +237,38 @@ List嵌套Map就是List中的元素类型又是一个Map
 
 ```java
     /**
- * List嵌套Map集合的元素遍历
- */
-@Test
-public void testListNestedMap(){
-    Map<String,String> asiaMap = new HashMap<>();
-    asiaMap.put("中国","北京");
-    asiaMap.put("韩国","首尔");
-    asiaMap.put("日本","东京");
+     * List嵌套Map集合的元素遍历
+     */
+    @Test
+    public void testListNestedMap(){
+        Map<String,String> asiaMap = new HashMap<>();
+        asiaMap.put("中国","北京");
+        asiaMap.put("韩国","首尔");
+        asiaMap.put("日本","东京");
 
-    Map<String,String> europeMap = new HashMap<>();
-    europeMap.put("英国","伦敦");
-    europeMap.put("法国","巴黎");
-    europeMap.put("德国","柏林");
+        Map<String,String> europeMap = new HashMap<>();
+        europeMap.put("英国","伦敦");
+        europeMap.put("法国","巴黎");
+        europeMap.put("德国","柏林");
 
-    List<Map<String,String>> world = new ArrayList<>();
+        List<Map<String,String>> world = new ArrayList<>();
 
-    world.add(asiaMap);
-    world.add(europeMap);
+        world.add(asiaMap);
+        world.add(europeMap);
 
-    System.out.println("List嵌套Map集合的元素遍历");
-    for (Map<String, String> map : world) {
-        Set<Map.Entry<String, String>> entrySet = map.entrySet();
+        System.out.println("List嵌套Map集合的元素遍历");
+        for (Map<String, String> map : world) {
+            Set<Map.Entry<String, String>> entrySet = map.entrySet();
 
-        for (Map.Entry<String, String> entry : entrySet) {
-            String country = entry.getKey();
-            String capital = entry.getValue();
-            System.out.println("国家：" + country + "    首都：" + capital);
+            for (Map.Entry<String, String> entry : entrySet) {
+                String country = entry.getKey();
+                String capital = entry.getValue();
+                System.out.println("国家：" + country + "    首都：" + capital);
+            }
+
         }
 
     }
-
-}
 ```
 
 
@@ -355,7 +357,7 @@ public void testMapNestedMap(){
         }
         System.out.println();
     }
-
+    
 }
 ```
 
@@ -983,7 +985,11 @@ java.lang.Exception类是所有Java异常的父类，异常可以通过异常处
 - 运行时异常：程序运行过程发生的异常，例如ArrayIndexOutOfBoundsException，NullPointerException，ClassCastException，它们都是RuntimeException的子类
 - 编译时异常：程序在编译时发生的异常，编译时异常必须在程序运行之前处理，否则程序没法编译通过。如果该异常不是RuntimeException或者子类，那么该异常就是编译时异常。例如ParseException，IOException
 
-![异常体系结构](%E8%B7%9F%E5%85%89%E7%A3%8A%E5%AD%A6Java%20%E7%AC%94%E8%AE%B0.assets/image-20240415234617855.png)
+
+
+![异常体系结构](README.assets/image-20240415234617855.png)
+
+
 
 ### 4.异常的产生和处理异常的产生
 
@@ -1323,3 +1329,225 @@ public static void main(String[] args) {
 #### 最佳实践
 
 现在都是微服务时代，一个大型的分布式系统会被拆成若干个子系统，系统和子系统之间通过HTTP调用接口来实现数据的交互，那么接口调用时可能发生一些异常情况（数据库GG，网络超时），此时我们就可以把调用接口的代码用try/catch/finally包起来，然后在catch中循环重试，至于重试的频率，次数根据业务的轻重来权衡。以此来保证服务的稳定性。
+
+
+
+## 并发编程
+
+### 并发核心概念
+
+#### 1.进程和线程
+
+> 操作系统（Windows10，macOs，Ubuntu Server）都支持多进程、多线程、多用户、多核CPU
+
+进程：当程序从磁盘加载到内存中运行的实例就是进程，进程它是操作系统来分配系统资源(CPU，内存，磁盘，网络)的基本调度单位。
+
+线程：线程是CPU的调度单位，线程负责执行进程的相关代码片段
+
+当程序加载到内存，操作系统就会创建程序的进程和线程，通常都是一个进程对应多个线程。线程负责执行具体的任务来实现进程对外提供的各种功能。I
+**进程和线程的区别**
+
+1. 创建顺序不同，先有进程，再有线程，进程是线程的容器，线程在进程中运行。
+2. 数量不同：通常都是一个进程对应多个线程。
+3. 共享内存不同：进程之间通常不进行内存共享，线程之间通常都是进行内存共享
+4. 系统开销不同：进程的创建和销毁的系统开销大于线程的创建和销毁
+
+#### 2.并发和并行
+
+并发指的是单核CPU在执行多个任务，由于多个任务之间的切换时间非常短（ms），就造成了一种看似同时在执行任务。
+
+但是实际上单核CPU无法在同一个时间同时处理多个任务。
+
+生活中并发的例子：体育老师一天要带4个班级，上午带两个，下午带两个。重点是不是同时带4个班.
+
+**并行**指的是多核CPU同时处理多个任务，每个CPU核心对应一个任务，这个才是真正意义上的同时处理。
+
+并行一定是并发，但是并发不是并行。
+
+生活中并行的例子：4车道的高速公路允许4辆车同时运行。
+
+#### 3.多线程和高并发
+
+高并发指的是服务器端同时收到了大量的客户端请求
+
+高并发是系统的一种状态。
+
+高并发的例子
+
+> - 12306 抢票
+> - 春节抢红包
+> - 双11
+> - 618
+
+**高并发的指标**
+
+> - QPS
+> - PV
+> - UV
+> - 并发连接数
+> - 服务器平均请求等待时间
+
+多线程：当程序运行之后，对应进程有多个线程在同时运行，那么这个程序就是多线程的程序。
+
+现在绝大多数程序都是多线程的。
+
+高并发不一定是多线程，高并发是系统的一种状态。
+
+多线程是高并发的其中一种解决方案
+
+常见的高并发的解决方案：
+
+> - 多线程，可以充分利用CPU的计算能力，提高系统的吞吐量
+> - Redis 降低数据库的压力
+> - RabbitMQ，Kafka，RocketMQ
+
+#### 4.Java线程调度机制
+
+线程调度的两种机制
+
+- 分时调度：所有的线程轮流使用CPU的使用权，平均分配每个CPU的占用时间
+- 抢占式调度：优先让优先级高的线程使用CPU，如果优先级相同，那就是哪个线程抢到了CPU就执行哪个线程的任务
+
+抢占式的例子：排队打饭。
+Java线程调度机制就是抢占式，那就是哪个线程抢到了CPU就执行哪个线程的任务，这样意味着程序在运行的时候可能会有不同的结果。
+不过我们可以通过一些机制（同步）来控制多个线程执行的规律。
+
+### 线程创建启动
+
+#### 1.线程的创建
+
+java.lang.Thread类表示一个线程，如果创建一个Thread类的对象，就表示创建一个线程对象。
+
+**Thread类的常用构造方法**
+
+- public Thread()表示使用系统设置的线程名称来创建Thread对象，例如Thread-0
+- public Thread(Runnable target)表示使用系统设置的线程名称以及指定的线程任务来创建Thread对象
+- public Thread(Runnable target,String name)使用指定的线程任务以及指定的线程名称来创建Thread对象
+
+**Thread类的常用方法**
+
+- run方法 表示线程执行的任务
+- start() 启动线程
+
+**创建线程方式**
+
+1. 继承Thread类，重写run方法
+
+```java
+public class ThreadCreateStartTest {
+    /**
+     * main方法也是一个线程，即主线程
+     * 主线程有JVM创建
+     * JVM启动的时候，还创建了一些其他的线程
+     * @param args
+     */
+    public static void main(String[] args) {
+        // 创建Thread类的子类对象
+        CustomThread customThread = new CustomThread();
+        // 调用Thread类的start()方法
+        customThread.start();
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println("主线程 i = " + i);
+        }
+    }
+}
+
+/**
+ * 第一种创建线程的方式
+ * 继承Thread类 重写run方法
+ */
+class CustomThread extends Thread {
+    /**
+     *
+     */
+    @Override
+    public void run() {
+        for (int j = 0; j < 100; j++) {
+            System.out.println("子线程 j = " + j);
+        }
+    }
+}
+```
+
+2. 实现Runnable接口，重写run方法
+
+```java
+public class ThreadCreateStartTest {
+
+    /**
+     * main方法也是一个线程，即主线程
+     * 主线程有JVM创建
+     * JVM启动的时候，还创建了一些其他的线程
+     * @param args
+     */
+    public static void main(String[] args) {
+        Thread thread = new Thread(new CustomRunnable());
+        thread.start();
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println("主线程 i = " + i);
+        }
+    }
+}
+
+/**
+ * 第二种实现线程的方式
+ * 实现Runnable接口，重写run方法
+ */
+class CustomRunnable implements Runnable {
+    @Override
+    public void run() {
+        for (int j = 0; j < 100; j++) {
+            System.out.println("子线程 j = " + j);
+        }
+    }
+}
+```
+
+网上说的线程创建的方式 有两种，三种，四种，五种。
+
+使用匿名内部类和lambda表达式语法来创建和启动线程
+
+```java
+// 匿名内部类的方式创建线程
+new Thread(new Runnable() {
+    @Override
+    public void run() {
+        System.out.println("匿名内部类创建线程");
+        Logger.getGlobal().info("Logger：匿名内部类创建线程");
+    }
+}).start();
+
+// lambda表达式建线程
+new Thread(() -> {
+    System.out.println("匿名内部类创建线程");
+    Logger.getGlobal().info("Logger：匿名内部类创建线程");
+}).start(); 
+```
+
+**官方说的两种**
+
+1. 和线程绑定，继承Thread类
+2. 和线程解耦，实现Runnable,Callable接口
+
+**两种创建线程方式的区别**
+
+1. 继承Thread类，那么就不能继承其他的父类，因为]ava只支持单继承，但是如果是实现Runnable接口，还可以实现其他接口，也可以继承其他父类
+
+2. 继承Thread类，那么这个类就和线程绑定。实现Runnable接口，Callable接口，关注的是线程任务，这样就和线程分离(解耦)
+
+3. 如果多个线程执行的任务相同，实现Runnable接口就可以实现任务复用。
+
+4. 线程池提交任务的时候，只会接收Runnable接口的实现类，不接受Thread
+
+
+
+#### 2.线程的启动
+
+线程的线程是调用Thread类的**start()方法**开启线程，调用run方法不会开启新线程(例如Thread-0)
+
+
+
+### 线程执行原理
+
