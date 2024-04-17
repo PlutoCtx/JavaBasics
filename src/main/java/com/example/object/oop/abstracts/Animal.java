@@ -40,6 +40,4 @@ public abstract class Animal {
 
 
     public abstract void sleep(String nationality);
-
-
 }

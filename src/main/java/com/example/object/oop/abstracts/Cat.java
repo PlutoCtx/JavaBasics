@@ -17,10 +17,6 @@ public class Cat extends Animal {
 
     }
 
-
-
-
-
     /**
      * 动物吃东西
      * 子类重写父类的抽象方法

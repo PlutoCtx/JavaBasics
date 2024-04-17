@@ -18,10 +18,7 @@ public class SuperClass {
         //查看显示初始化成员变量赋值结果
         //System.out.println("staticVariable = " + SuperClass.staticVariable);
         //System.out.println("memberVariable = " + this.memberVariable);
-
     }
-
-
 
     //静态代码块
     static {
@@ -63,15 +60,9 @@ public class SuperClass {
     }
 
 
-
     static class InnerClass{
         static {
             System.out.println("6.执行父类的静态内部类的静态代码块");
-
         }
-
-
     }
-
-
 }

@@ -21,10 +21,5 @@ public class DurationTest {
         Duration duration = Duration.between(startTime, endTime);
 //        System.out.println(duration);
         System.out.println("两个渡口相距多少" + duration.getSeconds() + "秒");
-
     }
-
-
-
-
 }

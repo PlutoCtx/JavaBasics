@@ -35,10 +35,6 @@ public class MemberInnerClass {
             System.out.println("内部类成员变量 name = " + this.name);
             //访问外部类的私有成员
             System.out.println("外部类成员变量 name = " + MemberInnerClass.this.name);
-
         }
     }
-
-
-
 }

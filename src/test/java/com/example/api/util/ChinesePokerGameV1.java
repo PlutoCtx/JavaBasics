@@ -43,7 +43,6 @@ public class ChinesePokerGameV1 {
         System.out.println("当前扑克牌数量为：" + pokerBox.size());
         System.out.println("当前扑克牌为：" + pokerBox);
 
-
         // 2.洗牌
         System.out.println("************************* 2. 洗牌 *************************");
 
@@ -84,8 +83,5 @@ public class ChinesePokerGameV1 {
 
         System.out.println("底牌数量：" + cards.size());
         System.out.println("底牌：" + cards);
-
     }
-
-
 }

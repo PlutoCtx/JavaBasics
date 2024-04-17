@@ -17,8 +17,6 @@ public class StaticInnerClass {
             System.out.println("形参 count = " + count);
             System.out.println("内部类的静态成员 count = " + InnerClass.count);
             System.out.println("外部类的静态成员 count = " + StaticInnerClass.count);
-
         }
     }
-
 }

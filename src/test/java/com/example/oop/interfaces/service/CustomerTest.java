@@ -24,7 +24,5 @@ public class CustomerTest {
         downloadCompleteCallBack = new InstallCallBack();
         max = new Customer(downloadCompleteCallBack);
         max.downloadData("IDEA.exe");
-
     }
-
 }

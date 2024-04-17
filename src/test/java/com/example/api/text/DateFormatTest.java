@@ -55,9 +55,5 @@ public class DateFormatTest {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
-
     }
-
-
 }

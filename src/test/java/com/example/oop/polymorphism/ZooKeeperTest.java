@@ -24,7 +24,6 @@ public class ZooKeeperTest {
         Monkey monkey = (Monkey)animal;
         monkey.play();
 
-
         /*
             instanceof运算符
          */
@@ -35,7 +34,6 @@ public class ZooKeeperTest {
         //类型转化异常
         //java.lang.ClassCastException
         //Tiger tiger = (Tiger) animal;
-
 
         animal = new Tiger("东北虎");
         food = new Meat("野猪肉");
@@ -48,11 +46,6 @@ public class ZooKeeperTest {
         //形参多态和返回值多态的使用
         Animal animalReturnValue = zooKeeper.getAnimal(monkey);
         System.out.println("动物的信息: " + animalReturnValue.getName());
-
-
-
-
-
     }
 
 }

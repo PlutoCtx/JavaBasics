@@ -37,10 +37,5 @@ public class RuntimeTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
-
-
-
 }

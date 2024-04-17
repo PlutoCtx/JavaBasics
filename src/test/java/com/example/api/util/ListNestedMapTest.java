@@ -70,9 +70,7 @@ public class ListNestedMapTest {
                 String capital = entry.getValue();
                 System.out.println("国家：" + country + "    首都：" + capital);
             }
-
         }
-
     }
 
 
@@ -107,7 +105,6 @@ public class ListNestedMapTest {
             List<String> cities = entry.getValue();
             System.out.println("国家：" + country + "的城市有：" + cities);
         }
-
     }
 
 
@@ -127,7 +124,6 @@ public class ListNestedMapTest {
         europeMap.put("英国","伦敦");
         europeMap.put("法国","巴黎");
         europeMap.put("德国","柏林");
-
 
 
         Map<String,Map<String,String>> map = new LinkedHashMap<>();
@@ -150,14 +146,6 @@ public class ListNestedMapTest {
             }
             System.out.println();
         }
-
     }
-
-
-
-
-
-
-
 
 }

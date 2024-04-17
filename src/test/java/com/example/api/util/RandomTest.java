@@ -25,8 +25,6 @@ public class RandomTest {
     }
 
 
-
-
     /**
      * 能产生指定范围的数
      */
@@ -38,7 +36,6 @@ public class RandomTest {
             System.out.print(random.nextInt(10) + " ");
         }
     }
-
 
 
 
@@ -76,7 +73,5 @@ public class RandomTest {
             System.out.println(threadLocalRandom.nextDouble(100) + " ");
         }
     }
-
-
 
 }

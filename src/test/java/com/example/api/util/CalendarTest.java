@@ -117,7 +117,6 @@ public class CalendarTest {
 
         calendar.add(Calendar.YEAR,26);
         System.out.println("日历对象添加26年之后的年份是" + calendar.get(Calendar.YEAR));
-
     }
 
 
@@ -157,7 +156,5 @@ public class CalendarTest {
         System.out.println("calendar1.after(calendar2) = " + calendar1.after(calendar2));
 
     }
-
-
 
 }

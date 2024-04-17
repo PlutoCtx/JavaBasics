@@ -77,10 +77,5 @@ public class LocalTimeTest {
 
         System.out.println("当前时间加15秒：" + now.plusSeconds(15));
         System.out.println("当前时间减15秒：" + now.minusSeconds(15));
-
-
-
     }
-
-
 }

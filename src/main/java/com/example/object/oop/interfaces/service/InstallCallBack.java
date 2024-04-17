@@ -16,15 +16,7 @@ public class InstallCallBack implements DownloadCompleteCallBack{
         System.out.println("迅雷下载的数据是：" + data);
         if (soft.equals(data)){
             System.out.println("用户执行安装程序" + data);
-
-
         }
-
-
-
-
     }
-
-
 }
 

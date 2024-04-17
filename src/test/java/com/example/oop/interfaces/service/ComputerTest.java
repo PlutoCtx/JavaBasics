@@ -20,8 +20,5 @@ public class ComputerTest {
         USB usb1 = new Mouse();
         USB usb2 = new HardDisk();
         computer.showComputerDeviceInfo(usb1,usb2);
-
     }
-
-
 }

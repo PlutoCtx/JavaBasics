@@ -22,6 +22,4 @@ public interface Comparator {
      *
      */
     int compare(Cellphone source,Cellphone target);
-
-
 }

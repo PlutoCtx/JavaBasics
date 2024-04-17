@@ -20,12 +20,5 @@ public class StaticInnerClassSingletonTest {
         System.out.println(StaticInnerClassSingleton.getInstance());
         System.out.println(StaticInnerClassSingleton.getInstance());
         System.out.println(StaticInnerClassSingleton.getInstance());
-
-
-
     }
-
-
-
-
 }

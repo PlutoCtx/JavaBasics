@@ -217,15 +217,5 @@ public class GenericTest {
         List<Number> numberList = new ArrayList<>(Arrays.asList(100, 200, 300, 400, 500, 600, 700, 800));
         System.out.println("********** 集合的元素是Integer的父类Number ************");
         printList(numberList);
-
-
     }
-
-
-
-
-
-
-
-
 }

@@ -34,11 +34,6 @@ public class ProcessHandleTest {
             System.out.println(command + "的进程开始时间是" + info.startInstant().get());
 
             System.out.println(command + "的进程总运行时间是" + info.totalCpuDuration().get());
-
-
-
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }

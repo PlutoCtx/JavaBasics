@@ -46,13 +46,6 @@ public class CollectionTest {
     }
 
 
-
-
-
-
-
-
-
     /**
      * 集合添加元素
      *
@@ -121,7 +114,6 @@ public class CollectionTest {
 
         collection.removeAll(subCollection);
         System.out.println("删除北京和南京后的集合元素：" + collection);
-
     }
 
     /**
@@ -133,7 +125,6 @@ public class CollectionTest {
     public void testCollectionClear(){
         collection.clear();
         System.out.println("清空集合的所有元素：" + collection);
-
     }
 
     /**
@@ -148,7 +139,6 @@ public class CollectionTest {
         collection.clear();
         System.out.println("清空集合之前，当前collection集合的元素个数：" + collection.size());
         System.out.println("清空集合之前，当前collection集合是否为空：" + collection.isEmpty());
-
     }
 
 
@@ -188,11 +178,5 @@ public class CollectionTest {
         /*
             常用的方法都是组合使用，针对不同的业务场景
          */
-
-
-
-
     }
-
-
 }

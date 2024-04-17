@@ -26,7 +26,6 @@ public class AppUserServiceImpl extends CommonUserService implements UserService
     }
 
 
-
     @Override
     public void log() {
         System.out.println("记录app用户的操作日志成功");

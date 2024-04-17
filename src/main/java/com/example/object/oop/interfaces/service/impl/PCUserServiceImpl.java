@@ -33,21 +33,5 @@ public class PCUserServiceImpl extends CommonUserService implements UserService 
         }else {
             System.out.println("PC端用户登录失败");
         }
-
-
     }
-
-
-
-    //    @Override
-//    public void resetPassword() {
-//        System.out.println("密码重置成功");
-//    }
-//
-//    @Override
-//    public void register() {
-//        getsecurityService().securityCheck();
-//        getV
-//        System.out.println("PC用户注册成功");
-//    }
 }

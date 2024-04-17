@@ -131,8 +131,5 @@ public class LocalDateTest {
 
         boolean after = now.isAfter(oneYearLaterDate);
         System.out.println("当前日期是否在5年以前的日期之后：" + after);
-
     }
-
-
 }

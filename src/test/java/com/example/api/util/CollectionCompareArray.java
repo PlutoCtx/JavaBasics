@@ -32,16 +32,6 @@ public class CollectionCompareArray {
         Map<String ,String> map = new HashMap<>();
         map.put("姓名","Max");
         map.put("年龄","19");
-
-
-
-
-
-
     }
-
-
-
-
 
 }

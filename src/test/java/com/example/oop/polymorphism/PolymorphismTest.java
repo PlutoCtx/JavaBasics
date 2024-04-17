@@ -20,7 +20,5 @@ public class PolymorphismTest {
 
         animal = new Panda();
         animal.eat();
-
     }
-
 }

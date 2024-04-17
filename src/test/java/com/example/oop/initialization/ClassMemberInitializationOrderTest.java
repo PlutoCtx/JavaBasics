@@ -16,6 +16,5 @@ public class ClassMemberInitializationOrderTest {
         new SubClass();
 
         SubClass.InnerClass innerClass = new SubClass.InnerClass();
-
     }
 }

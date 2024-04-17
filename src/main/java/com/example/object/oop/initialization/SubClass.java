@@ -2,7 +2,6 @@ package com.example.object.oop.initialization;
 
 /**
  * 子类成员的初始化机制
- *
  * 1 2的优先级相同 执行顺序取决于谁先定义
  * 3 4的优先级相同 执行顺序取决于谁先定义
  *
@@ -64,18 +63,9 @@ public class SubClass extends SuperClass{
     }
 
 
-
     public static class InnerClass{
         static {
             System.out.println("11.执行子类的静态内部类的静态代码块");
-
         }
-
-
     }
-
-
-
-
-
 }

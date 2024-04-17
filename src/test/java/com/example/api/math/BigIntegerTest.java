@@ -21,7 +21,6 @@ public class BigIntegerTest {
 
         long longMaxValue = Long.MAX_VALUE;
         System.out.println("long表示的最大值是" + longMaxValue);
-
     }
 
 
@@ -98,12 +97,5 @@ public class BigIntegerTest {
 
         long longValue = divideResult.longValue();
         System.out.println("longValue = " + longValue);
-
-
     }
-
-
-
-
-
 }

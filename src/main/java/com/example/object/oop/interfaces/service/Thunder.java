@@ -22,10 +22,6 @@ public class Thunder {
         System.out.println(data + "已经下载完成");
         //回调
         downloadCompleteCallBack.doloadCompleteCallBack(data);
-
-
     }
-
-
 }
 

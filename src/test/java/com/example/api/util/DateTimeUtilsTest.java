@@ -15,7 +15,6 @@ import java.util.Date;
 
 public class DateTimeUtilsTest {
 
-
     @Test
     public void testUTCTimeToDate(){
 
@@ -31,8 +30,6 @@ public class DateTimeUtilsTest {
         //String utcTime = "";
         //DateTimeUtils.utc
     }
-
-
 
 
     @Test

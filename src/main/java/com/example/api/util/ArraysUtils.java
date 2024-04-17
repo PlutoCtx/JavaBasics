@@ -24,5 +24,4 @@ public class ArraysUtils {
         return RandomUtils.randomArray(length);
 
     }
-
 }

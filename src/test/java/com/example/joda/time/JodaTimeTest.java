@@ -43,8 +43,6 @@ public class JodaTimeTest {
         LocalDate twoMonthAgo = currentDate.minusMonths(2).withDayOfMonth(2);
         System.out.println("计算当前日期的2个月前" + twoMonthAgo);
 
-
-
     }
 
 

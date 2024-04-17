@@ -20,11 +20,10 @@ public class DateTimeTest {
         System.out.println("当前时间：" + currentDate);
 
 
-        /**
+        /*
          * 标准基准时间 1970年1月1日 00:00:00
          * 中国标准基准时间 1970年1月1日 08:00:00
          * 2000毫秒 等于2秒
-         *
          * 1970年1月1日 08:00:02
          */
         Date offsetDate = new Date(2000);

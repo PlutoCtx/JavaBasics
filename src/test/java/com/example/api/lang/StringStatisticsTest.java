@@ -40,16 +40,7 @@ public class StringStatisticsTest {
 
 
         System.out.printf("你输入的字符串中，大写字母数量是%d，小写字母数量是%d，" +
-                "数字的数量是%d",upperCaseCount,lowerCaseCount,numberCount);
-
-
-
-
-
-
-
+                "数字的数量是%d", upperCaseCount, lowerCaseCount, numberCount);
 
     }
-
-
 }

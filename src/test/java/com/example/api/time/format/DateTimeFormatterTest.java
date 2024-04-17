@@ -78,7 +78,7 @@ public class DateTimeFormatterTest {
      */
     @Test
     public void testLocalDateTimeParse(){
-        /**
+        /*
          * 标准时间日期格式：2022-08-02T08:55:45.1618688
          * 自定义日期格式：2022-08-02T08:55:45
          */
@@ -86,15 +86,8 @@ public class DateTimeFormatterTest {
         DateTimeFormatter customDateTimeFormatter = DateTimeFormatter.ofPattern(DataTimeUtils.STANDARD_DATE_T_TIME_FORMAT);
         System.out.println("日期字符串转换为LocalDateTime对象后日期时间信息：" + LocalTime.parse("2022-08-02T08:55:45",customDateTimeFormatter));
 
-
         //2022-08-02T08:55:45.161
         customDateTimeFormatter = DateTimeFormatter.ofPattern(DataTimeUtils.STANDARD_DATE_T_TIME_MIL_FORMAT);
         System.out.println("日期字符串转换为LocalDateTime对象后日期时间信息：" + LocalDateTime.parse("2022-08-02T08:55:45.161",customDateTimeFormatter));
-
-
     }
-
-
-
-
 }

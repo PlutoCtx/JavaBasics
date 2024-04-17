@@ -26,8 +26,5 @@ public class CalculateBirthdayTest {
         Date systemDate = new Date();
         long days = (DataTimeUtils.calculatorTime(birthday.getTime(),systemDate.getTime()))/24/60/60/1000;
         System.out.printf("你的出生日期是%s,你已经活了%d天了\n",source,days);
-
-
-
     }
 }

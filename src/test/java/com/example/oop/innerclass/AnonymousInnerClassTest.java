@@ -27,9 +27,5 @@ public class AnonymousInnerClassTest {
 
         animal.eat();
         animal.sleep("中国四川");
-
-
-
     }
-
 }

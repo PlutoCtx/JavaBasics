@@ -7,13 +7,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AnimalTest {
-    //    private static Calculator cal=new Calculator();
+    //    private static Calculator cal = new Calculator();
     @Before
     public void setUp() throws Exception {
         System.out.println("测试开始");
     }
-
-
 
 
     @After

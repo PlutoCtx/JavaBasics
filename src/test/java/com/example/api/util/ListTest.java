@@ -45,7 +45,6 @@ public class ListTest {
         for (Cellphone cellphone : cellphoneList) {
             System.out.println(cellphone);
         }
-
     }
 
 
@@ -114,7 +113,6 @@ public class ListTest {
         System.out.println("上海在cities集合中最后一次出现的索引：" + shanghaiIndex);
 
         String shanghai = cities.get(shanghaiIndex);
-
     }
 
 
@@ -131,7 +129,6 @@ public class ListTest {
         cities.remove(3);
 
         System.out.println("删除4个元素之后当前cities集合的元素内容是：" + cities);
-
     }
 
 
@@ -170,9 +167,6 @@ public class ListTest {
 
     @Test
     public void testListIterator(){
-
-
-
         System.out.println("******************方式1：使用Iterator遍历List集合******************");
         Iterator<Cellphone> iterator = cellphoneList.iterator();
         while (iterator.hasNext()) {
@@ -192,7 +186,6 @@ public class ListTest {
             // 通过索引获取元素
             System.out.println(cellphoneList.get(i));
         }
-
     }
 
 
@@ -214,7 +207,6 @@ public class ListTest {
         for (Cellphone cellphone : cellphoneList) {
             System.out.println(cellphone);
         }
-
     }
 
 
@@ -237,12 +229,5 @@ public class ListTest {
         for (Cellphone cellphone : cellphoneList) {
             System.out.println(cellphone);
         }
-
     }
-
-
-
-
-
-
 }

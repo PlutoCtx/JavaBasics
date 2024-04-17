@@ -28,6 +28,4 @@ public class StringUtilsTest {
         System.out.println(Arrays.toString(array));
         System.out.println(StringUtils.arrayToString(array));
     }
-
-
 }

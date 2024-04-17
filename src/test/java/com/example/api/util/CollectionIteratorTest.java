@@ -28,10 +28,7 @@ public class CollectionIteratorTest {
         collection.add("深圳");
         System.out.println("当前collection集合的元素：" + collection);
         System.out.println("\n");
-
     }
-
-
 
 
     /**
@@ -82,7 +79,6 @@ public class CollectionIteratorTest {
             }
         }
         System.out.println("当前集合元素的内容：" + collection);
-
     }
 
 
@@ -98,7 +94,6 @@ public class CollectionIteratorTest {
             String city = iterator.next();
             System.out.println(city);
         }
-
         //此处会引发NoSuchElementException异常
 //        String city = iterator.next();
 //        System.out.println(city);
@@ -127,21 +122,12 @@ public class CollectionIteratorTest {
             System.out.println(city);
         }
 
-
         System.out.println("使用增强for循环遍历数组");
         Object[] objects = collection.toArray();
         for (Object city : objects) {
             //collection.remove("数组");
             System.out.println(city);
         }
-
-
-
-
     }
-
-
-
-
 
 }

@@ -15,7 +15,6 @@ import java.time.Period;
 
 public class PeriodTest {
 
-
     @Test
     public void testPeriodBetween(){
         LocalDate startDate = LocalDate.of(2021, 06, 01);
@@ -29,5 +28,4 @@ public class PeriodTest {
         System.out.println("两个日期相距的天数：" + period.getDays());
 
     }
-
 }

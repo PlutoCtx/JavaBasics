@@ -30,8 +30,6 @@ public class InstantTest {
         //1秒 = 1_000_000_000纳秒
         Instant plusFourSecondsInstant = Instant.ofEpochSecond(3, 1_000_000_000);
         System.out.println("当前标准基准时间(UTC时间)加上4秒的时间戳：" + plusFourSecondsInstant);
-
-
     }
 
     @Test
@@ -44,14 +42,7 @@ public class InstantTest {
         ZoneId tokyoZonedId = ZoneId.of("Asia/Tokyo");
         ZonedDateTime tokyoZoneDateTime = currentInstant.atZone(tokyoZonedId);
         System.out.println("亚洲/东京时区的日期时间信息:" + tokyoZoneDateTime);
-
-
     }
-
-
-
-
-
 }
 
 

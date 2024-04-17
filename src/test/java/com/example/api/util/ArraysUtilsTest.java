@@ -18,10 +18,5 @@ public class ArraysUtilsTest {
     public void testGeneratorArray(){
         int[] numbers = ArraysUtils.generatorArray(10);
         System.out.println("生成的数组的内容" + Arrays.toString(numbers));
-
     }
-
-
-
-
 }

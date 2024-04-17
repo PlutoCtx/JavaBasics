@@ -58,18 +58,12 @@ public class BigDecimalTest {
     public void testBigDecimalDivide(){
         BigDecimal left = new BigDecimal("10.0");
         BigDecimal right = new BigDecimal("3.0");
-        /**
+        /*
          * scale 2表示保留两位小数
          * RoundingMode.HALF_UP表示四舍五入
          */
         BigDecimal divideResult = left.divide(right,2, RoundingMode.HALF_UP);
 
         System.out.printf("%s / %s = %s \n",left,right,divideResult);
-
-
-
     }
-
-
-
 }

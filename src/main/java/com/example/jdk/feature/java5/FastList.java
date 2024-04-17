@@ -13,9 +13,4 @@ import java.util.List;
 
 public interface FastList<E> extends List<E> {
 
-
-
-
-
-
 }

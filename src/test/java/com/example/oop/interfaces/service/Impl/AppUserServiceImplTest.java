@@ -18,6 +18,5 @@ public class AppUserServiceImplTest {
         System.out.println(LogService.WEB_SITE_NAME);
 
         UserService.statistics();
-
     }
 }

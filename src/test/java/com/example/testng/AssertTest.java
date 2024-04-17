@@ -16,7 +16,5 @@ public class AssertTest {
     @Test
     public void testAssert(){
         Assert.assertEquals(11,11);
-
-
     }
 }

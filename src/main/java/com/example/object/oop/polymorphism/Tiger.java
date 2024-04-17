@@ -13,17 +13,9 @@ public class Tiger extends Animal{
         super(name);
     }
 
-
-
-
-
     @Override
     public void eat(Food food){
         System.out.println(this.getName() + "正在吃" + food.getName());
     }
-
-
-
-
 
 }

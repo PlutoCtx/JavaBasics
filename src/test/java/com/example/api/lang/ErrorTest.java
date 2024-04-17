@@ -25,8 +25,4 @@ public class ErrorTest {
     public void testCreateStackOverFlowError() {
         createStackOverFlowError();
     }
-
-
-
-
 }

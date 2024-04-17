@@ -15,7 +15,6 @@ package com.example.oop.innerclass;
 public class LocalInerClassTest {
 
     public static void main(String[] args) {
-
         int number = 10;
 
         class InnerClass{
@@ -27,21 +26,10 @@ public class LocalInerClassTest {
             public void showLocalMemberInfo(){
                 System.out.println(this.name);
                 System.out.println("main(方法的局部变量 number = " + number);
-
             }
         }
 
         InnerClass innerClass = new InnerClass("局部内部类");
         innerClass.showLocalMemberInfo();
-
-
-
-
-
-
-
-
     }
-
-
 }

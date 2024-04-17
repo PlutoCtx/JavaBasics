@@ -103,6 +103,4 @@ public class DataTimeUtils {
         DateTime dateTime = new DateTime(date, DateTimeZone.UTC);
         return dateTime.toString();
     }
-
-
 }

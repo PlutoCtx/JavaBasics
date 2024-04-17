@@ -25,7 +25,6 @@ public class MapTest {
         map.put("日本","东京");
         map.put("新加坡","新加坡");
         System.out.println("初始化map集合的元素内容：" + map);
-
     }
 
 
@@ -61,7 +60,6 @@ public class MapTest {
         String value = map.remove("日本");
         System.out.println("删除日本之后map集合的内容" + map);
         System.out.println("删除日本之后返回的值" + value);
-
     }
 
 
@@ -72,7 +70,6 @@ public class MapTest {
 
         map.replace("日本","大阪","名古屋");
         System.out.println("修改map中日本的值之后的集合元素内容：" + map);
-
     }
 
 
@@ -140,9 +137,6 @@ public class MapTest {
             //获取键值对对象的键值拼接后输出
             System.out.println("国家：" + country + "      首都：" + capital);
         }
-
-
-
     }
 
 
@@ -250,8 +244,4 @@ public class MapTest {
             System.out.println("手机信息：" + cellphone + "手机厂商名称：" + name);
         }
     }
-
-
-
-
 }

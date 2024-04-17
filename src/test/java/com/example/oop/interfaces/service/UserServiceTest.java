@@ -32,10 +32,5 @@ public class UserServiceTest {
             AndroidUserServiceImpl androidUserService = (AndroidUserServiceImpl) userService;
             System.out.println(androidUserService.getDeviceInfo());
         }
-
-
-
-
     }
-
 }

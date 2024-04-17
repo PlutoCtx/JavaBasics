@@ -17,20 +17,5 @@ public class MemberInnerClassTest {
         //通过外部类对象创建内部类对象
         MemberInnerClass.Innerclass innerclass = memberInnerClass.new Innerclass("内部类");
         innerclass.showMemberInfo("形参");
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
 }

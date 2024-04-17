@@ -22,7 +22,6 @@ public class SortTest {
                 new Cellphone("联想","联想",5799,"白色",350)
         };
 
-
         //增强for循环
         System.out.println("排序之前");
 
@@ -36,7 +35,6 @@ public class SortTest {
         for (Cellphone cellphone : cellphones) {
             System.out.println(cellphone);
         }
-
     }
 
     public static void sort(Cellphone[] cellphones, Comparator comparator){
@@ -51,20 +49,4 @@ public class SortTest {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

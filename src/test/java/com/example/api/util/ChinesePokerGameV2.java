@@ -42,7 +42,6 @@ public class ChinesePokerGameV2 {
 
 
 
-
         // 2.洗牌
         System.out.println("************************* 第二版 2. 洗牌 *************************");
         Set<Integer> idSet = pokerBox.keySet();
@@ -103,14 +102,5 @@ public class ChinesePokerGameV2 {
 
         System.out.println("底牌数量：" + cards.size());
         System.out.println("底牌：" + cards);
-
-
-
-
-
     }
-
-
-
-
 }

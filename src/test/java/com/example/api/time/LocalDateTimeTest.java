@@ -25,7 +25,6 @@ public class LocalDateTimeTest {
         System.out.println("自定义日期时间信息：" + customDateTime);
     }
 
-
     @Test
     public void testLocalDateTimeGetLocalDateLocalTime(){
         LocalDateTime currentDateTime = LocalDateTime.of(LocalDate.now(), LocalTime.now());
@@ -34,11 +33,5 @@ public class LocalDateTimeTest {
 
         System.out.println("当前日期信息：" + currentDate);
         System.out.println("当前时间信息：" + currentTime);
-
-
-
     }
-
-
-
 }

@@ -42,7 +42,6 @@ public class ObjectsTest {
         //断言结果不报错
         //因此 尽量使用Objects的equals()方法 以防止空指针异常
         Assert.assertEquals(result,false);
-
     }
 
 
@@ -61,10 +60,8 @@ public class ObjectsTest {
     }
 
 
-
     /**
      * 测试Objects类的requireNonNull()方法
-     *
      * 如果该方法传递的是null，就会抛出NPE(空指针)异常
      *
      *
@@ -88,7 +85,4 @@ public class ObjectsTest {
 //        System.out.println(Objects.nonNull(str));
 //        Assert.assertEquals(Objects.nonNull(str),true);
     }
-
-
-
 }

@@ -20,7 +20,6 @@ public class SimpleDateFormatNotThreadSafe {
     public static void main(String[] args) {
         DateFormat dateFormat = new SimpleDateFormat(DataTimeUtils.STANDARD_DATE_FORMAT);
 
-
         for (int i = 0; i < 30; i++) {
             Thread thread = new Thread(new Runnable() {
                 @Override
@@ -37,6 +36,4 @@ public class SimpleDateFormatNotThreadSafe {
         }
 
     }
-
-
 }

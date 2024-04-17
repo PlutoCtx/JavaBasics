@@ -162,8 +162,5 @@ public class Cellphone {
 //        return cellphone.getPrice() - this.getPrice();
 //    }
 
-
-
-
 }
 

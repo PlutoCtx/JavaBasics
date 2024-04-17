@@ -47,37 +47,4 @@ public class TemporalAdjustersTest {
         System.out.println("将当前日期改成今年的最后一天的日期信息" + currentDate.with(TemporalAdjusters.lastDayOfYear()));
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

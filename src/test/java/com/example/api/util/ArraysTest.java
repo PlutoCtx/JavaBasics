@@ -37,8 +37,6 @@ public class ArraysTest {
         long startTime = System.currentTimeMillis();
         Arrays.sort(numbers);
         long endTime = System.currentTimeMillis();
-        DataTimeUtils.calculatorTime(startTime,endTime);
+        DataTimeUtils.calculatorTime(startTime, endTime);
     }
-
-
 }

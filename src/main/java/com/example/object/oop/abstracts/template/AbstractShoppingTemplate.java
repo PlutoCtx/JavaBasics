@@ -19,7 +19,6 @@ public abstract class AbstractShoppingTemplate {
         addShoppingCart();
         pay();
         commitOrder();
-
     }
 
 

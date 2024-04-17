@@ -17,10 +17,7 @@ public class StaticInnerClassTest {
         //StaticInnerClass staticInnerClass = new StaticInnerClass();
         //StaticInnerClass.InnerClass innerClass = StaticInnerClass.class;
 
-
         //调用静态内部类方法
         innerClass.showStaticMemberInfo(30);
-
-
     }
 }

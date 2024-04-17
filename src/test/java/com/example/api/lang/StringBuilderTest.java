@@ -79,8 +79,6 @@ public class StringBuilderTest {
         StringBuilder builder = new StringBuilder();
         //StringBuilder转String
         String toStringResult = builder.toString();
-
-
     }
 
 }

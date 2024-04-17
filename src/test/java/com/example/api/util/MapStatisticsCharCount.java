@@ -34,7 +34,6 @@ public class MapStatisticsCharCount {
             }else {
                 map.put(ch, 1);
             }
-
         }
 
         System.out.println("map的内容为：" + map);
@@ -46,7 +45,6 @@ public class MapStatisticsCharCount {
             Integer count = entry.getValue();
             System.out.println("字符" + ch + "个数是" + count);
         }
-
     }
 
 }

@@ -12,7 +12,6 @@ import com.example.object.oop.abstracts.template.TaoBaoShopping;
  */
 
 public class TemplateMethodPatternTest {
-
     public static void main(String[] args) {
         TaoBaoShopping taoBaoShopping = new TaoBaoShopping();
         taoBaoShopping.shopping();
@@ -21,9 +20,5 @@ public class TemplateMethodPatternTest {
 
         JDShopping jdShopping = new JDShopping();
         jdShopping.shopping();
-
-
-
     }
-
 }

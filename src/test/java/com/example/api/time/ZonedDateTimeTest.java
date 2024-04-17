@@ -34,8 +34,6 @@ public class ZonedDateTimeTest {
         System.out.println("东京的时区信息：" + zoneId);
         ZoneId defaultZonedId = ZoneId.systemDefault();
         System.out.println("系统默认的时区信息：" + defaultZonedId);
-
-
     }
 
 
@@ -52,42 +50,5 @@ public class ZonedDateTimeTest {
         LocalDateTime currentDateTime = LocalDateTime.now();
         ZonedDateTime wrapperCurrentDateTimeToTokyoZoneDateTime = ZonedDateTime.of(currentDateTime,tokyoZonedId);
         System.out.println("将当前日期时间包装成亚洲/东京时区的日期时间：" + wrapperCurrentDateTimeToTokyoZoneDateTime);
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

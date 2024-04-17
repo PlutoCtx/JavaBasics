@@ -20,8 +20,5 @@ public class UserServiceTest {
             pcUserService.resetPassword();
 
             UserService.statistics();
-
-
         }
-
 }

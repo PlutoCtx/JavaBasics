@@ -13,6 +13,7 @@ import com.example.object.oop.enums.Season;
 public class EnumTest {
     public static void main(String[] args) {
         Season spring = Season.SPRING;
+        System.out.println();
         System.out.println(spring);
 
         spring = Season.getSeasonByDescription("春天");

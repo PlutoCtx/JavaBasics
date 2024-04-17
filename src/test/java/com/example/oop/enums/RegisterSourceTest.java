@@ -11,14 +11,6 @@ import com.example.object.oop.enums.RegisterSource;
  */
 
 public class RegisterSourceTest {
-//    public static void main(String[] args) {
-//        RegisterSourceComponent registerSourceComponent = new RegisterSourceComponent();
-//        registerSourceComponent.handleRegisterSource(RegisterSource.PC);
-//
-//
-//
-//    }
-
     public static void main(String[] args) {
         RegisterSourceComponent registerSourceComponent = new RegisterSourceComponent();
         registerSourceComponent.handleRegisterSource(RegisterSource.PC);

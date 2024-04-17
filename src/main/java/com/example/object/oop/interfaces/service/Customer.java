@@ -24,8 +24,5 @@ public class Customer {
     public void downloadData(String url){
         Thunder thunder = new Thunder();
         thunder.HandleDownloadData(url,downloadCompleteCallBack);
-
-
-
     }
 }

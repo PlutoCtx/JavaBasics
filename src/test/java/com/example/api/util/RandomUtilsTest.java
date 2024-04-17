@@ -26,9 +26,5 @@ public class RandomUtilsTest {
             //密码长度
             System.out.println(RandomUtils.randomPassword(10));
         }
-
-
     }
-
-
 }

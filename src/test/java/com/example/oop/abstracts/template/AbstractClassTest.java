@@ -28,10 +28,5 @@ public class AbstractClassTest {
 
         Cat iran = new Cat("伊朗");
         iran.sleep(iran.getNationality());
-
-
-
-
     }
-
 }
