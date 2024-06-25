@@ -21,29 +21,29 @@ public class StringUtils {
         return new StringBuilder(str).reverse().toString();
     }
 
-        /**
-         * 整数数组转字符串
-         * @param array
-         * @return
-         */
-        public static String arrayToString(int[] array) {
-            if (null == array){
-                return "null";
-            }
-            int maxIndex = array.length - 1;
-            //空数组
-            if (maxIndex == -1){
-                return "[]";
-            }
-            StringBuilder builder = new StringBuilder("[");
-            for (int i = 0; i < array.length; i++) {
-                if (i != maxIndex){
-                    builder.append(array[i]).append(", ");
-                }else {
-                    builder.append(array[i]).append("]");
-                }
-            }
-            return builder.toString();
+    /**
+     * 整数数组转字符串
+     * @param array
+     * @return
+     */
+    public static String arrayToString(int[] array) {
+        if (null == array){
+            return "null";
         }
+        int maxIndex = array.length - 1;
+        //空数组
+        if (maxIndex == -1){
+            return "[]";
+        }
+        StringBuilder builder = new StringBuilder("[");
+        for (int i = 0; i < array.length; i++) {
+            if (i != maxIndex){
+                builder.append(array[i]).append(", ");
+            }else {
+                builder.append(array[i]).append("]");
+            }
+        }
+        return builder.toString();
+    }
 
 }
